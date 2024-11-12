@@ -1,0 +1,284 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPetFc0pwvX70jfnV3zXBNC",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/SarahCalazans/ENG_20242/blob/main/atividade11/11\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "id": "zbXIiCRVtzc9"
+      },
+      "outputs": [],
+      "source": [
+        "#1. Crie uma função que receba uma lista de números e retorne uma lista contendo apenas os números ímpares.\n",
+        "\n",
+        "def imprimeimpar(lista):\n",
+        "  impar = [x for x in lista if x % 2 != 0 ]\n",
+        "  print(impar)\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#1 execução\n",
+        "\n",
+        "lista = [3, 5, 8, 9]\n",
+        "imprimeimpar(lista)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wtDHnzIBwFH2",
+        "outputId": "371d665c-64ea-4e7e-95e2-c9b835f13ca1"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[3, 5, 9]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#2. Escreva uma função que receba uma lista e retorne uma nova lista com o dobro de cada elemento.\n",
+        "\n",
+        "def imprimedobro(lista):\n",
+        "  dobro = [ x*2 for x in lista]\n",
+        "  print(dobro)"
+      ],
+      "metadata": {
+        "id": "mTBeMSwSw1Wu"
+      },
+      "execution_count": 22,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#2 execução\n",
+        "lista = [3, 5, 8, 9]\n",
+        "imprimedobro(lista)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "g-0zP6a0y-6v",
+        "outputId": "55f9dfc6-3696-4944-e6f3-918342e79bf6"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[6, 10, 16, 18]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#3. Faça uma função que receba uma lista e retorne uma lista sem duplicatas.\n",
+        "def imprimesemdup(lista):\n",
+        "  sem_duplicatas = list(set(lista))\n",
+        "  return sem_duplicatas"
+      ],
+      "metadata": {
+        "id": "epEN4v-CuHfV"
+      },
+      "execution_count": 27,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#3 execução\n",
+        "\n",
+        "lista = [4, 4, 4, 4, 5, 7, 8]\n",
+        "imprimesemdup(lista)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WuJ87c3y3hnx",
+        "outputId": "7aed5cc4-3fd5-432c-92e0-ee4c76c47fac"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[8, 4, 5, 7]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#4. Crie uma função que receba uma lista e um valor divisor e retorne uma lista dos elementos que são divisíveis pelo divisor.\n",
+        "\n",
+        "def imprimediv(lista,divisor):\n",
+        "  divisiveis = [ x for x in lista if x%divisor ==0]\n",
+        "  return divisiveis"
+      ],
+      "metadata": {
+        "id": "tPs-O0rM4HEx"
+      },
+      "execution_count": 37,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#4 execução\n",
+        "\n",
+        "lista = [ 1, 2, 3, 4, 5, 6]\n",
+        "divisor = 2\n",
+        "print(imprimediv(lista,divisor))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_DufjKda4uvI",
+        "outputId": "21358b76-f423-4c02-9d2b-2be599238339"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2, 4, 6]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#5. Escreva uma função que receba duas listas e retorne um conjunto com os elementos que aparecem em ambas.\n",
+        "\n",
+        "def imprimelist(lista1, lista2):\n",
+        "  conj1 =set(lista1)\n",
+        "  conj2 =set(lista2)\n",
+        "  uniao = conj1.union(conj2)\n",
+        "  print(uniao)"
+      ],
+      "metadata": {
+        "id": "tHK56UA87pq0"
+      },
+      "execution_count": 45,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#5 execução\n",
+        "\n",
+        "lista1 = [ 1, 2, 3, 4, 5, 6]\n",
+        "lista2 = [ 2, 9, 0]\n",
+        "(imprimelist(lista1, lista2))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e-pZqGYQ9gId",
+        "outputId": "26b329e9-a921-464e-8bfd-3dbcfc824c78"
+      },
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{0, 1, 2, 3, 4, 5, 6, 9}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#6. Crie uma função que receba uma lista e retorne uma nova lista com os elementos em ordem inversa.\n",
+        "\n",
+        "def imprimeinv(lista):\n",
+        " return sorted(lista,reverse=True)"
+      ],
+      "metadata": {
+        "id": "oABCs1IV-Rj6"
+      },
+      "execution_count": 88,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#6 execução\n",
+        "\n",
+        "lista = [1, 2, 3, 4, 5, 6]\n",
+        "ordenado = list(imprimeinv(lista))\n",
+        "print(ordenado)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mK0gnIpy-3-w",
+        "outputId": "8721cdf2-62b9-437c-a8d8-722ade31fce0"
+      },
+      "execution_count": 89,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[6, 5, 4, 3, 2, 1]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
